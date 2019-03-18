@@ -3,5 +3,8 @@
 
 int main() {
     Grafo grafo;
-    grafo.print();
+    grafo.hacerCamino();
+    grafo.printCaminos();
+    grafo.anadirCaminoLista();
+    grafo.BFS(4);
 }

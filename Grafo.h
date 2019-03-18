@@ -4,7 +4,9 @@
 
 #ifndef TAREA_PATHFINDING_GRAFO_H
 #define TAREA_PATHFINDING_GRAFO_H
+#include <list>
 
+using namespace std;
 
 class Grafo {
 
@@ -12,10 +14,14 @@ public:
 
     Grafo() = default;
 
-    int grafo[10][10];
+    int grafoCaminos[10][10];
+    list<int>* listaGrafos = new list <int> [10];
 
-    void print();
+    void printCaminos();
     void hacerCamino();
+    int generarNumero();
+    void anadirCaminoLista();
+    void BFS(int inicio);
 
 };
 
