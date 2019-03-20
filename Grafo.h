@@ -22,6 +22,8 @@ public:
     int generarNumero();
     void anadirCaminoLista();
     void BFS(int inicio);
+    void AStar(int inicio);
+
 
 };
 
