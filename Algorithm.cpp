@@ -2,8 +2,6 @@
 // Created by jose on 19/03/19.
 //
 
-#include "Algorithm.h"
-
 // A C++ Program to implement A* Search Algorithm
 #include<bits/stdc++.h>
 using namespace std;

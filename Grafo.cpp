@@ -8,11 +8,12 @@
 using namespace std;
 
 void Grafo::printCaminos(){
+    cout << "The graph is:" << endl;
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){
             cout << this->grafoCaminos[i][j] << "     ";
         }
-        cout << "\n";
+        cout << "\n \n";
     }
 }
 
@@ -55,6 +56,7 @@ void Grafo::anadirCaminoLista() {
 }
 
 void Grafo::BFS(int inicio){
+    cout << "BFS: Beggining from: " << inicio << endl;
     // Mark all the vertices as not visited
     bool* visitados = new bool[10];
     for(int i = 0; i < 10; i++)
@@ -90,5 +92,6 @@ void Grafo::BFS(int inicio){
             }
         }
     }
+    cout << "\n" << endl;
 
 }
